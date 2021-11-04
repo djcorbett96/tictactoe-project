@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="startScreen">
+        <header>Tic Tac Toe</header>
+        <section class="playerInfo">
+            <form id="playerForm">
+                <div class="playerOne">
+                    <h1>Player One</h1>
+                    <label for="oneName">Name:</label>
+                    <input type="text" id="oneName" class="playerOneName">
+                </div>
+                <div class="playerTwo">
+                    <h1>Player Two</h1>
+                    <label for="twoName">Name:</label>
+                    <input type="text" id="twoName" class="playertwoName">
+                </div>
+            </form>
+            <button id="startBtn" type="button" form="playerForm" value="Submit">Start Game</button>
+        </section>
+    </div>
+    <div class="gameBoard">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+    <div class="currentTurn">
+        <p class="turnText"></p>
+        <button class="startOver">Start Over</button>
+        <button class="returnHomeBtn">Return Home</button>
+    </div>
+    <div class="winScreen hideScreen">
+        <p class="winText">You win!</p>
+        <button class="playAgainBtn">Play Again</button>
+        <button class = "returnHomeBtn winScreen">Return Home</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
